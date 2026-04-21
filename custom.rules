@@ -1,0 +1,7 @@
+# Sample Snort 3 custom rule for FMC upload testing.
+#
+# Local rule SIDs should be unique. Start at 1000000 or higher for local rules.
+# This sample only alerts when the payload contains the marker string below.
+# Change sid/msg/content before using it in a shared or production lab.
+
+alert tcp any any -> any any ( msg:"LOCAL FMC Snort3 upload sample marker"; flow:established; content:"fmc-snort3-sample-marker",fast_pattern,nocase; classtype:policy-violation; sid:1000001; rev:1; )
