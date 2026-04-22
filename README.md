@@ -25,7 +25,7 @@ Set FMC connection details as environment variables:
 
 ```bash
 export FMC_HOST="https://<fmc-host>"
-export FMC_USERNAME="admin"
+export FMC_USERNAME="<user>"
 export FMC_PASSWORD="<password>"
 ```
 
